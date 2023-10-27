@@ -1,0 +1,92 @@
+:root {
+  --main_color: #00acdc;
+  --black_color: #000;
+}
+
+body,
+ul {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border: 1px solid rgb(224, 220, 220);
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+  margin-bottom: 74px;
+}
+
+.header--big {
+  width: 1200px;
+}
+
+.header--small {
+  width: 1024px;
+}
+
+.logo_container {
+
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+}
+
+.logo_image {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav_item {
+  display: flex;
+}
+
+.nav_list {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black_color);
+  font-style: normal;
+  transition: color 0.3s ease;
+}
+
+.nav_link:hover {
+  color: var(--main_color);
+
+}
+
+.is-active {
+  color: var(--main_color);
+  position: relative;
+}
+
+.is-active::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--main_color);
+  position: absolute;
+  bottom: 0;
+  border-radius: 8px;
+}
