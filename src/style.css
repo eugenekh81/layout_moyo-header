@@ -3,8 +3,9 @@
   --black_color: #000;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+body,
+ul {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -12,17 +13,19 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
   height: 60px;
   border: 1px solid rgb(224, 220, 220);
-  align-items: center;
   margin: 0 auto;
   padding: 0 50px;
   box-sizing: border-box;
   margin-bottom: 74px;
 }
 
-.header_small {
+.header--big {
+  width: 1200px;
+}
+
+.header--small {
   width: 1024px;
 }
 
@@ -37,6 +40,14 @@ body {
   display: flex;
 }
 
+.nav {
+  display: flex;
+}
+
+.nav_item {
+  display: flex;
+}
+
 .nav_list {
   display: flex;
   list-style-type: none;
@@ -44,13 +55,14 @@ body {
 }
 
 .nav_link {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--black_color);
   font-style: normal;
-  position: relative;
   transition: color 0.3s ease;
 }
 
@@ -61,6 +73,7 @@ body {
 
 .is-active {
   color: var(--main_color);
+  position: relative;
 }
 
 .is-active::after {
@@ -70,6 +83,6 @@ body {
   height: 4px;
   background-color: var(--main_color);
   position: absolute;
-  bottom: -20px;
+  bottom: 0;
   border-radius: 8px;
 }
