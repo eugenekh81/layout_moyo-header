@@ -30,14 +30,18 @@ ul {
 }
 
 .logo_container {
-  display: flex;
-  overflow: hidden;
-  width: 40px;
-  height: auto;
+
 }
 
 .logo {
   display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+}
+
+.logo_image {
+  width: 100%;
 }
 
 .nav {
